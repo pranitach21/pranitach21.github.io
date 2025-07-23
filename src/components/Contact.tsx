@@ -25,28 +25,6 @@ function Contact() {
     setEmailError(email === '');
     setMessageError(message === '');
 
-    /* Uncomment below if you want to enable the emailJS */
-
-    // if (name !== '' && email !== '' && message !== '') {
-    //   var templateParams = {
-    //     name: name,
-    //     email: email,
-    //     message: message
-    //   };
-
-    //   console.log(templateParams);
-    //   emailjs.send('service_id', 'template_id', templateParams, 'api_key').then(
-    //     (response) => {
-    //       console.log('SUCCESS!', response.status, response.text);
-    //     },
-    //     (error) => {
-    //       console.log('FAILED...', error);
-    //     },
-    //   );
-    //   setName('');
-    //   setEmail('');
-    //   setMessage('');
-    // }
   };
 
   return (
@@ -55,6 +33,16 @@ function Contact() {
         <div className="contact_wrapper">
           <h1>Contact Me</h1>
           <p>Got a project waiting to be realized? Let's collaborate and make it happen!</p>
+
+          {/* Your Contact Info */}
+          <div className="my-contact-info" style={{ marginBottom: "1rem", fontSize: "16px" }}>
+            <p><strong>Email:</strong> <a href="mailto:pranita.ch2103@gmail.com">pranita.ch2103@gmail.com</a></p>
+            <p><strong>Phone:</strong> <a href="tel:+919146977910">+91 9146977910</a></p>
+            <p><strong>Location:</strong> Faridabad, Haryana, India</p>
+            <p><strong>LinkedIn:</strong> <a href="https://www.linkedin.com/in/pranitachaudhary" target="_blank" rel="noreferrer">pranitachaudhary</a></p>
+          </div>
+
+          {/* Contact Form */}
           <Box
             ref={form}
             component="form"

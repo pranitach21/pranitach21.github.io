@@ -16,50 +16,40 @@ function Timeline() {
             className="vertical-timeline-element--work"
             contentStyle={{ background: 'white', color: 'rgb(39, 40, 34)' }}
             contentArrowStyle={{ borderRight: '7px solid  white' }}
-            date="2022 - present"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            date="Aug 2021 – Present"
+            iconStyle={{ background: '#5000ca', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Technology Consultant</h3>
-            <h4 className="vertical-timeline-element-subtitle">Dallas, TX</h4>
+            <h3 className="vertical-timeline-element-title">DevOps Engineer</h3>
+            <h4 className="vertical-timeline-element-subtitle">Faridabad, Haryana, India</h4>
             <p>
-              Full-stack Web Development, GenAI/LLM, Project Management, Business Development
+              Designed, automated, and maintained cloud infrastructure using AWS, Terraform, and Kubernetes. Integrated CI/CD pipelines with Jenkins and Azure DevOps, and implemented monitoring with CloudWatch, Prometheus, and Grafana.
             </p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2020 - 2022"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            date="Jan 2021 – Jul 2021"
+            iconStyle={{ background: '#5000ca', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Full Stack Engineer</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">DevOps Intern</h3>
+            <h4 className="vertical-timeline-element-subtitle">Remote</h4>
             <p>
-              Frontend Development, Backend Development, User Experience, Team Leading
+              Worked on containerization using Docker and Kubernetes, built CI/CD pipelines, and assisted in migrating legacy systems to the cloud using Terraform on AWS.
             </p>
           </VerticalTimelineElement>
+
           <VerticalTimelineElement
             className="vertical-timeline-element--work"
-            date="2021 - 2021"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
+            date="2020 – 2021"
+            iconStyle={{ background: '#5000ca', color: 'white' }}
             icon={<FontAwesomeIcon icon={faBriefcase} />}
           >
-            <h3 className="vertical-timeline-element-title">Staff Engineer Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Laie, HI</h4>
+            <h3 className="vertical-timeline-element-title">Cloud & Automation Trainee</h3>
+            <h4 className="vertical-timeline-element-subtitle">Training Program</h4>
             <p>
-              Full-stack Development, API Development, User Experience
-            </p>
-          </VerticalTimelineElement>
-          <VerticalTimelineElement
-            className="vertical-timeline-element--work"
-            date="2020 - 2020"
-            iconStyle={{ background: '#5000ca', color: 'rgb(39, 40, 34)' }}
-            icon={<FontAwesomeIcon icon={faBriefcase} />}
-          >
-            <h3 className="vertical-timeline-element-title">Data Analyst Intern</h3>
-            <h4 className="vertical-timeline-element-subtitle">Tokyo, Japan</h4>
-            <p>
-              Automation, Data Governance, Statistical Analysis
+              Trained on CI/CD, Terraform, AWS services, Git, Jenkins, shell scripting, and Kubernetes fundamentals. Developed sample projects with EKS and infrastructure provisioning.
             </p>
           </VerticalTimelineElement>
         </VerticalTimeline>

@@ -1,91 +1,72 @@
 import React from "react";
 import '@fortawesome/free-regular-svg-icons'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { faReact, faDocker, faPython } from '@fortawesome/free-brands-svg-icons';
+import { faAws, faJenkins, faLinux } from '@fortawesome/free-brands-svg-icons';
 import Chip from '@mui/material/Chip';
 import '../assets/styles/Expertise.scss';
 
+// Section 1: Cloud & Infrastructure
 const labelsFirst = [
-    "React",
-    "TypeScript",
-    "JavaScript",
-    "HTML5",
-    "CSS3",
-    "SASS",
-    "Flask",
-    "Python",
-    "SQL",
-    "PostgreSQL",
-    "Postman"
+  "AWS", "Terraform", "Kubernetes", "VPC", "Route53", "NAT Gateway", "VPN", "EC2", "EBS", "S3", "CloudFront"
 ];
 
+// Section 2: CI/CD & DevOps
 const labelsSecond = [
-    "Git",
-    "GitHub Actions",
-    "Docker",
-    "AWS",
-    "Azure",
-    "Linux",
-    "Snowflake",
-    "Pandas",
-    "Selenium",
+  "Azure DevOps", "Jenkins", "GitLab CI", "Git", "GitHub", "Docker", "Bash", "Python", "Artifactory", "Cognito"
 ];
 
+// Section 3: Monitoring & Observability
 const labelsThird = [
-    "OpenAI",
-    "Groq",
-    "LangChain",
-    "Qdrant",
-    "Hugging Face",
-    "LlamaIndex",
-    "Streamlit",
+  "Prometheus", "Grafana", "CloudWatch", "Dynatrace", "ELK Stack", "Datadog", "MongoDB", "PostgreSQL", "Linux"
 ];
 
 function Expertise() {
-    return (
+  return (
     <div className="container" id="expertise">
-        <div className="skills-container">
-            <h1>Expertise</h1>
-            <div className="skills-grid">
-                <div className="skill">
-                    <FontAwesomeIcon icon={faReact} size="3x"/>
-                    <h3>Full Stack Web Development</h3>
-                    <p>I have built a diverse array of web applications from scratch using modern technologies such as React and Flask. I have a strong proficiency in the SDLC process and frontend + backend development.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsFirst.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
-
-                <div className="skill">
-                    <FontAwesomeIcon icon={faDocker} size="3x"/>
-                    <h3>DevOps & Automation</h3>
-                    <p>Once the application is built, I help clients set up DevOps testing, CI/CD pipelines, and deployment automation to support the successful Go-Live.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsSecond.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
-
-                <div className="skill">
-                    <FontAwesomeIcon icon={faPython} size="3x"/>
-                    <h3>GenAI & LLM</h3>
-                    <p>Stay relevant in the market by leveraging the latest AI models in your projects. I have professional experience building enterprise grade GenAI-enabled solutions to empower intelligent decision making.</p>
-                    <div className="flex-chips">
-                        <span className="chip-title">Tech stack:</span>
-                        {labelsThird.map((label, index) => (
-                            <Chip key={index} className='chip' label={label} />
-                        ))}
-                    </div>
-                </div>
+      <div className="skills-container">
+        <h1>Expertise</h1>
+        <div className="skills-grid">
+          
+          <div className="skill">
+            <FontAwesomeIcon icon={faAws} size="3x" />
+            <h3>Cloud & Infrastructure</h3>
+            <p>Hands-on experience in designing, automating, and managing scalable, secure, and highly available infrastructure on AWS using Terraform, Kubernetes, and core AWS services.</p>
+            <div className="flex-chips">
+              <span className="chip-title">Tech stack:</span>
+              {labelsFirst.map((label, index) => (
+                <Chip key={index} className='chip' label={label} />
+              ))}
             </div>
+          </div>
+
+          <div className="skill">
+            <FontAwesomeIcon icon={faJenkins} size="3x" />
+            <h3>CI/CD & DevOps Automation</h3>
+            <p>Implemented efficient DevOps pipelines and automation strategies using Jenkins, Azure DevOps, and GitLab. Skilled in automating deployments, secrets management, and containerization with Docker.</p>
+            <div className="flex-chips">
+              <span className="chip-title">Tech stack:</span>
+              {labelsSecond.map((label, index) => (
+                <Chip key={index} className='chip' label={label} />
+              ))}
+            </div>
+          </div>
+
+          <div className="skill">
+            <FontAwesomeIcon icon={faLinux} size="3x" />
+            <h3>Monitoring & Observability</h3>
+            <p>Experienced in implementing end-to-end observability using Prometheus, Grafana, Dynatrace, and AWS CloudWatch. Ensured high system availability, alerting, and automated diagnostics across production environments.</p>
+            <div className="flex-chips">
+              <span className="chip-title">Tech stack:</span>
+              {labelsThird.map((label, index) => (
+                <Chip key={index} className='chip' label={label} />
+              ))}
+            </div>
+          </div>
+
         </div>
+      </div>
     </div>
-    );
+  );
 }
 
 export default Expertise;

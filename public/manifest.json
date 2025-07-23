@@ -1,6 +1,6 @@
 {
-  "short_name": "React App",
-  "name": "Create React App Sample",
+  "short_name": "Pranita",
+  "name": "Pranita Chaudhary | DevOps Portfolio",
   "icons": [
     {
       "src": "favicon.ico",
@@ -20,6 +20,7 @@
   ],
   "start_url": ".",
   "display": "standalone",
-  "theme_color": "#000000",
-  "background_color": "#ffffff"
+  "theme_color": "#6c63ff",
+  "background_color": "#ffffff",
+  "description": "Personal portfolio of Pranita Chaudhary, DevOps Engineer specializing in AWS, Kubernetes, Terraform, and CI/CD automation."
 }
